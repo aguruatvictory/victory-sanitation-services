@@ -1,17 +1,157 @@
+:root {
+  --green: #0f3d2e;
+  --deep-green: #08261d;
+  --gold: #c9a227;
+  --white: #ffffff;
+  --cream: #f7f4ed;
+  --text: #1f2933;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: white;
-  color: #0f3d2e;
+  margin: 0;
   font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 80px;
+  color: var(--text);
+  background: var(--cream);
+}
+
+.hero {
+  min-height: 90vh;
+  background:
+    linear-gradient(rgba(8, 38, 29, 0.86), rgba(8, 38, 29, 0.86)),
+    url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 28px 8%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav-button,
+.primary-button {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--deep-green);
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.hero-content {
+  max-width: 760px;
+  margin-top: 130px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 h1 {
-  color: #0f3d2e;
-  font-size: 48px;
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1.02;
+  margin: 16px 0;
 }
 
-p {
-  color: #b8860b;
-  font-size: 22px;
+.subtext {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 680px;
+  margin-bottom: 34px;
+}
+
+.section {
+  padding: 90px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  color: var(--green);
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 40px;
+}
+
+.card {
+  background: var(--white);
+  padding: 34px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+  border-top: 5px solid var(--gold);
+}
+
+.card h3 {
+  color: var(--green);
+}
+
+.dark {
+  background: var(--green);
+  color: var(--white);
+}
+
+.dark h2 {
+  color: var(--gold);
+}
+
+.dark p {
+  max-width: 760px;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.process {
+  max-width: 760px;
+  margin: auto;
+  text-align: left;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.contact {
+  background: var(--white);
+}
+
+footer {
+  background: var(--deep-green);
+  color: var(--white);
+  text-align: center;
+  padding: 24px;
+}
+
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .hero-content {
+    margin-top: 80px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }

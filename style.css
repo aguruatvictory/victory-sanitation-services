@@ -83,10 +83,10 @@ nav a {
 }
 
 .hero-logo {
-    width: 290px;
-    max-width: 80%;
+    width: 430px;
+    max-width: 90%;
     display: block;
-    margin: 0 auto 12px auto;
+    margin: 0 auto 18px auto;
     filter: drop-shadow(0 14px 28px rgba(7, 31, 24, .18));
 }
 

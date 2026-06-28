@@ -52,13 +52,13 @@ nav a {
 .btn {
   background: var(--gold);
   color: var(--deep-green);
-  padding: 13px 20px;
+  padding: 15px 26px;
   border-radius: 999px;
   text-decoration: none;
-  font-weight: 800;
-  display: inline-block;
+  font-weight: 700;
+  transition: all .25s ease;
 }
-
+ 
 .hero {
   min-height: 88vh;
   display: flex;

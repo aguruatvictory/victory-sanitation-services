@@ -155,3 +155,14 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.brand img {
+    height: 75px;
+    width: auto;
+}
+
+.hero-logo {
+    width: 420px;
+    max-width: 90%;
+    display: block;
+    margin-bottom: 30px;
+}

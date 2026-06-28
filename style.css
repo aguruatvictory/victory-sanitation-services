@@ -67,15 +67,15 @@ nav a {
 }
 
 .hero {
-  min-height: 88vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 90px 7%;
-  background:
-    radial-gradient(circle at top, rgba(201, 162, 39, 0.18), transparent 34%),
-    linear-gradient(180deg, #ffffff 0%, var(--cream) 100%);
-  text-align: center;
+    min-height: 62vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 7% 30px;
+    background:
+        radial-gradient(circle at top, rgba(201, 162, 39, 0.18), transparent 34%),
+        linear-gradient(180deg, #ffffff 0%, var(--cream) 100%);
+    text-align: center;
 }
 
 .hero-inner {
@@ -83,10 +83,10 @@ nav a {
 }
 
 .hero-logo {
-    width: 300px;
+    width: 290px;
     max-width: 80%;
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 12px auto;
     filter: drop-shadow(0 14px 28px rgba(7, 31, 24, .18));
 }
 
@@ -105,12 +105,12 @@ nav a {
 }
 
 h1 {
-  font-family: "Cinzel", serif;
-  font-size: clamp(42px, 6.5vw, 82px);
-  line-height: 1;
-  color: var(--green);
- margin: 12px 0 18px;
-  letter-spacing: -2px;
+    font-family: "Cinzel", serif;
+    font-size: clamp(42px, 6.5vw, 82px);
+    line-height: 0.95;
+    color: var(--green);
+    margin: 8px 0 14px;
+    letter-spacing: -2px;
 }
 
 .hero-text {

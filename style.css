@@ -83,10 +83,11 @@ nav a {
 }
 
 .hero-logo {
-  width: 280px;
-  max-width: 82%;
-  margin-bottom: 45px;
-  filter: drop-shadow(0 14px 28px rgba(7, 31, 24, .18));
+    width: 300px;
+    max-width: 82%;
+    display: block;
+    margin: 0 auto 45px auto;
+    filter: drop-shadow(0 14px 28px rgba(7, 31, 24, .18));
 }
 
 .eyebrow,
